@@ -64,14 +64,14 @@
           <template v-slot:activator="{ on }">
             <v-btn icon large v-on="on">
               <v-avatar size="32px" item>
-                <v-icon>fa-user</v-icon>
+                <v-icon>mdi-user</v-icon>
               </v-avatar>
             </v-btn>
           </template>
           <v-list rounded>
             <v-list-item @click="onLogout">
               <v-list-item-icon>
-                <v-icon>fas fa-sign-out-alt</v-icon>
+                <v-icon>mdi-sign-out</v-icon>
               </v-list-item-icon>
               <v-list-item-title>Logout</v-list-item-title>
             </v-list-item>
@@ -97,13 +97,13 @@ import { AuthStore } from '../store/modules/auth.store';
 @Component
 export default class HomeView extends Vue {
   private loading = true;
-  private isOnline: boolean = true;
-  private drawer: boolean = false;
+  private isOnline = true;
+  private drawer = false;
   private navItems = [
     {
       text: 'Link',
       link: '/',
-      icon: 'fa-user',
+      icon: 'mdi-user',
     },
   ];
 
