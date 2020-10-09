@@ -91,7 +91,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Watch } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 import { AuthStore } from '../store/modules/auth.store';
 
 @Component
@@ -107,15 +107,15 @@ export default class HomeView extends Vue {
     },
   ];
 
-  created() {
+  created(): void {
     this.loading = false;
   }
 
-  onNavigate(link: string) {
+  onNavigate(link: string): void {
     this.$router.push(link);
   }
 
-  onLogout() {
+  onLogout(): void {
     AuthStore.logout();
     this.$router.push('login');
   }

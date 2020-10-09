@@ -42,14 +42,13 @@
 </template>
 
 <script lang="ts">
-import { Component, Prop, Vue, Mixins } from 'vue-property-decorator';
-import { AuthStore } from '../store/modules/auth.store';
+import { Component, Vue } from 'vue-property-decorator';
 
 @Component
 export default class LoginView extends Vue {
   private processing = false;
-  private username: string = '';
-  private password: string = '';
+  private username = '';
+  private password = '';
 }
 </script>
 
