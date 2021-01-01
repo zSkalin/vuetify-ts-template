@@ -1,5 +1,5 @@
 export const SampleService = {
-  getItems() {
+  getItems(): string[] {
     return ['Sample Item'];
   },
 };
