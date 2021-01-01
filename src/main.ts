@@ -1,5 +1,4 @@
 import { AuthStore } from './store/modules/auth.store';
-import VueMoment from 'vue-moment';
 import Vue from 'vue';
 import vuetify from '@/plugins/vuetify';
 import App from '@/App.vue';
@@ -11,7 +10,6 @@ import velocity from 'velocity-animate';
 
 Vue.config.productionTip = false;
 
-Vue.use(VueMoment);
 Vue.use(Notifications, { velocity });
 
 new Vue({
